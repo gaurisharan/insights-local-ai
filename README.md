@@ -1,12 +1,12 @@
 # Insights AI: Local LLM SQL Assistant
 
 ## Overview
-Insights AI is a local Streamlit application that leverages a fine-tuned LLM (via LM Studio) and PostgreSQL to translate natural-language problem statements into safe, efficient SQL queries. It follows core system-prompting principles to ensure accuracy and performance. it also has the option to dsiplay Plotly-based graphs and plots as and when needed.
+Insights AI is a local Streamlit application that leverages a fine-tuned LLM (via LM Studio) and PostgreSQL to translate natural-language problem statements into safe, efficient and executable SQL queries. You can use this to directly get results from your data through natural language input without the need of writing SQL queries. It follows core system-prompting principles to ensure accuracy and performance. it also has the option to dsiplay Plotly-based graphs and plots as and when needed.
 
 ## Key Features
 
 - **Natural-Language to SQL**: Converts user prompts into pure, single-line PostgreSQL queries without extraneous labels or explanations
-- **No internet access needed**: ensuring data privacy
+- **No internet access needed**: Ensuring data privacy
 - **Schema-Aware Generation**: Embeds table and column definitions in the prompt for context
 - **Query Safety**: Enforces rules to prevent destructive commands (no `DROP`, `DELETE`), uses `ILIKE` for case-insensitive matching
 - **Automated Formatting**: Post-processes LLM output to correct spacing, restore string literals, and append wildcards
