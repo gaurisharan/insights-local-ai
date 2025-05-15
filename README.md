@@ -26,20 +26,19 @@ Insights AI is a local Streamlit application that leverages a fine-tuned LLM (vi
     E --> F[Results];
 ```
 
-
-
 ## Prerequisites
 
 - Python 3.8 or higher
-- PostgreSQL (local instance)
+- PostgreSQL (local instance) - make sure your data is present in a postgres schema.
+  
 - LM Studio running locally with a compatible model (e.g., `dolphin3.0-llama3.1-8b`)
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/insights-ai.git
-   cd insights-ai
+   git clone https://github.com/gaurisharan/insights-local-ai.git
+   cd insights-local-ai
 
 2. Create and activate a virtual environment:
    ```bash
