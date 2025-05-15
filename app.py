@@ -206,7 +206,7 @@ def execute_query(query):
         conn.close()
 
 # Streamlit Chat UI
-st.title("Insights AI: Convert Natural Language to SQL Queries")
+st.title("Insights AI: Query your database with natural language — no SQL needed.")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
