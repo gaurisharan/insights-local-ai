@@ -42,17 +42,20 @@ Rules:
 
 # Schema Information
 SCHEMA_INFO = """
-TABLE transactions (
-    mti TEXT COLLATE pg_catalog."default" CHECK (mti IN ('FETCH', 'PAYMENT')),
-    txn_date DATE,
-    ref_id TEXT COLLATE pg_catalog."default" NOT NULL,
-    bou_id TEXT COLLATE pg_catalog."default",
-    bou_name TEXT COLLATE pg_catalog."default" CHECK (bou_name IN ('Federal Bank Limited', 'Canara Bank', 'ICICI Bank Limited', 'AU Small Finance Bank Limited', 'Union Bank of India', 'HDFC Bank Limited', 'Indian Overseas Bank', 'IndusInd Bank Limited', 'Bank of Baroda', 'IDBI Bank Limited', 'Punjab National Bank', 'Standard Chartered Bank', 'State Bank of India', 'DBS Bank India Limited', 'Airtel Payments Bank Limited', 'Axis Bank Limited', 'IDFC FIRST Bank Limited', 'YES Bank Limited', 'Bandhan Bank Limited')),
-    cou_id TEXT COLLATE pg_catalog."default",
-    cou_name TEXT COLLATE pg_catalog."default" CHECK (cou_name IN ('Airtel Payments Bank', 'Amazon Pay', 'Axis Bank', 'Bajaj Finserv', 'Bank of Baroda', 'Cred', 'FreeCharge', 'Google Pay', 'HDFC Bank', 'ICICI Bank', 'MobiKwik', 'Paytm Payments Bank', 'PhonePe', 'Punjab National Bank (PNB)', 'State Bank of India (SBI)', 'Union Bank of India')),
-    txn_amount NUMERIC(10,2)
+## ENTER SCHEMA INFO HERE (EXAMPLE CODE)-
+#TABLE transactions (
+#    action_type TEXT COLLATE pg_catalog."default" CHECK (action_type IN ('QUERY', 'TRANSFER')),
+#    event_date DATE,
+#    transaction_ref TEXT COLLATE pg_catalog."default" NOT NULL,
+#    branch_code TEXT COLLATE pg_catalog."default",
+#    branch_label TEXT COLLATE pg_catalog."default" CHECK (branch_label IN ('Citibank NA', 'Wells Fargo', 'JPMorgan Chase', 'Goldman Sachs', 'Bank of America', 'PNC Financial Services', 'Capital One', 'US Bank', 'TD Bank', 'BB&T Corporation', 'SunTrust Bank', 'Morgan Stanley', 'HSBC USA', 'Charles Schwab', 'Fifth Third Bank', 'Santander Bank', 'Regions Bank', 'Citizens Bank', 'M&T Bank', 'KeyBank')),
+#    partner_code TEXT COLLATE pg_catalog."default",
+#    partner_label TEXT COLLATE pg_catalog."default" CHECK (partner_label IN ('PayPal', 'Stripe', 'Square', 'Venmo', 'Zelle', 'Apple Pay', 'Google Wallet', 'Samsung Pay', 'Cash App', 'Chase Pay', 'Amazon Pay', 'Alipay', 'WeChat Pay', 'Klarna', 'Afterpay')),
+#    amount NUMERIC(12,2)
 );
 """
+
+## Edge case handling-
 
 def format_sql_query(sql_query):
     """
