@@ -93,7 +93,7 @@ streamlit run app.py
 3. Inspect the generated SQL, view results in a table, and optionally create charts
 
 ## Example Session
-User: List distinct bou_name and count of transactions grouped by date where amount > 1000
+User: List distinct name and count of transactions grouped by date where amount > 1000
 
 System: Generates and executes a query such as:
 
