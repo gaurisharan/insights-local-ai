@@ -67,10 +67,15 @@ Update `DB_CONFIG` in `app.py` (or your main script) with your PostgreSQL creden
 
 - Ensure `SYSTEM_PROMPT` and `SCHEMA_INFO` reflect your current database schema.
 
-- Install LM Studio
+- Configure LM Studio
 
   ![Alt text](Screenshot1.png)
 
+  Go to the developer tab on the left panel. Then go to the top bar "Select a model to load" and choose your preferred model. Wait for it to load.
+
+  ![Alt text](Screenshot2.png)
+
+  Toggle the status option at the top to "Running". Use the API generated in your code.
 
 - Confirm the LM Studio API endpoint and model in the `generate_sql_query` function:
 
