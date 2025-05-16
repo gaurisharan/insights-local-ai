@@ -68,6 +68,7 @@ Update `DB_CONFIG` in `app.py` (or your main script) with your PostgreSQL creden
 - Ensure `SYSTEM_PROMPT` and `SCHEMA_INFO` reflect your current database schema.
 
 - Configure LM Studio
+
   Go to the developer tab on the left panel. Then go to the top bar "Select a model to load" and choose your preferred model. Wait for it to load.
   ![Alt text](Screenshot1.png)
   
