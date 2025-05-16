@@ -5,6 +5,8 @@ Insights AI is a local Streamlit application that leverages a fine-tuned LLM (vi
 
 ![Alt text](Screenshot3.png)
 
+![Alt text](Screenshot4.png)
+
 ## Key Features
 
 - **Natural-Language to SQL**: Converts user prompts into pure, single-line PostgreSQL queries without extraneous labels or explanations
@@ -69,13 +71,15 @@ Update `DB_CONFIG` in `app.py` (or your main script) with your PostgreSQL creden
 
 - Ensure `SYSTEM_PROMPT` and `SCHEMA_INFO` reflect your current database schema.
 
-- Configure LM Studio
+- Configure LM Studio:
 
   Go to the developer tab on the left panel. Then go to the top bar "Select a model to load" and choose your preferred model. Wait for it to load.
   ![Alt text](Screenshot1.png)
+
   
   Toggle the status option at the top to "Running". Use the API generated in your code.
   ![Alt text](Screenshot2.png)
+  
 
 - Confirm the LM Studio API endpoint and model in the `generate_sql_query` function:
 
