@@ -67,6 +67,11 @@ Update `DB_CONFIG` in `app.py` (or your main script) with your PostgreSQL creden
 
 - Ensure `SYSTEM_PROMPT` and `SCHEMA_INFO` reflect your current database schema.
 
+- Install LM Studio
+
+  ![Alt text](Screenshot1.png)
+
+
 - Confirm the LM Studio API endpoint and model in the `generate_sql_query` function:
 
 ```python
