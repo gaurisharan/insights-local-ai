@@ -3,9 +3,9 @@
 ## Overview
 Insights AI is a local Streamlit application that leverages a fine-tuned LLM (via LM Studio) and PostgreSQL to translate natural-language problem statements into safe, efficient and executable SQL queries. You can use this to directly get results from your data through natural language input without the need of writing SQL queries. It follows core system-prompting principles to ensure accuracy and performance. it also has the option to dsiplay Plotly-based graphs and plots as and when needed.
 
-![Alt text](Screenshot3.png)
+<!--![Alt text](Screenshot3.png)
 
-![Alt text](Screenshot4.png)
+![Alt text](Screenshot4.png)-->
 
 ## Key Features
 
